@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <div id="undoBtn" class="icon-btn">↩️ Undo</div>
+            <div id="redoBtn" class="icon-btn">↪️ Redo</div>
+        </div>
+        <div class="text-area" id="textArea">
+        </div>
+        <div class="options">
+            <div class="font-type">
+                <select id="fontSelector">
+                    <option value="Arial">Arial</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Courier New">Courier New</option>
+                </select>
+            </div>
+            <div class="font-size">
+                <select id="fontSizeSelector">
+                    <option value="12px">12px</option>
+                    <option value="14px">14px</option>
+                    <option value="16px">16px</option>
+                    <option value="18px">18px</option>
+                    <option value="20px">20px</option>
+                    <option value="22px">22px</option>
+                    <option value="24px">24px</option>
+                    <option value="26px">26px</option>
+                    <option value="28px">28px</option>
+                    <option value="30px">30px</option>
+                </select>
+            </div>
+            <div class="text-style">
+                <div id="boldBtn" class="icon-btn"></div>
+                <div id="italicBtn" class="icon-btn"></div>
+                <div id="justifyBtn" class="icon-btn"></div>
+                <div id="strikeBtn" class="icon-btn"></div>
+            </div>
+        </div>
+        <div id="addTextBtn" class="icon-btn">➕ Add Text</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

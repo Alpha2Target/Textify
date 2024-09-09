@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar, .options, .text-area {
+    margin: 10px 0;
+}
+
+.icon-btn {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.icon-btn:hover {
+    background-color: #d0d0d0;
+}
+
+.text-area {
+    background-color: lightgray;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.font-type, .font-size, .text-style {
+    flex: 1;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.text-style {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.movable-text {
+    position: absolute;
+    cursor: move;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#addTextBtn {
+    margin-top: 10px;
+}
+
+#boldBtn {
+    background-image: url('assets/Bold.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+#italicBtn {
+    background-image: url('assets/Italic.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+#justifyBtn {
+    background-image: url('assets/Justify.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+#strikeBtn {
+    background-image: url('assets/Strike.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
